@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="well well-sm">
+        <strong>Display</strong>
+        <div class="btn-group">
+            <a id="list" (click)='enbleList()' class="btn btn-default btn-sm"><span class="glyphicon glyphicon-th-list">
+            </span>List</a><a id="grid" (click)='enbleGid()' class="btn btn-default btn-sm"><span
+                class="glyphicon glyphicon-th"></span>Grid</a>
+        </div>
+    </div>
+    <div id="recepies-list" class="row list-group">
+
+        <div class="item  col-xs-4 col-lg-4" *ngFor='#recepie of recepieLlist'>
+            <div class="thumbnail">
+                <img class="group list-group-image"  style="border-radius: 10px;" src="{{recepie.pictures_link}}" alt="" />
+                <div class="caption">
+                    <h4 class="group inner list-group-item-heading">
+                        {{recepie.title}}</h4>
+                    <p class="group inner list-group-item-text">
+                        <span > {{ recepie.directions.first }}  <br></span>
+                        </p>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6">
+                            <p class="lead">
+                                Servings : {{ recepie.servings }}</p>
+                        </div>
+                        <div class="col-xs-12 col-md-6">
+                           <span> Course : {{ recepie.courses }} </span><br>
+                            <span>Cusine :  {{ recepie.cusine }} </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

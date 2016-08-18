@@ -1,0 +1,21 @@
+ <div class="container">
+    <form [ngFormModel]='myForm' (ngSubmit)='onSubmit()'>
+        <div class="row">
+            <div class="col-md-offset-5 col-md-3">
+                <div class="form-login">
+                <h4>Welcome back.</h4>
+                <input [ngFormControl]="myForm.controls['email']" type='text' id='email' class="form-control input-sm chat-input" placeholder="email">
+                <br>
+                <input [ngFormControl]="myForm.controls['password']" type='password' id='password' class="form-control input-sm chat-input" placeholder="password">
+                <br>
+                <div class="wrapper">
+                <span class="group-btn">
+                 <button class="btn btn-primary btn-md" type='submit'>Submit</button>
+                </span>
+                </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<span *ngIf="errors">{{ errors }}</span>

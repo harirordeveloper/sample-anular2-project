@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptLibraryMappings">
+    <file url="file://$PROJECT_DIR$" libraries="{angular-2-beta-boilerplate node_modules}" />
+    <file url="file://$PROJECT_DIR$/dev/logout.component.ts" libraries="{ECMAScript 6}" />
+  </component>
+</project>
